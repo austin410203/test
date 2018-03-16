@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pz0-TB-4ji">
+                                <rect key="frame" x="85" y="192" width="205.5" height="41.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTANT DEVELOPER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgz-uO-HWA">
+                                        <rect key="frame" x="0.0" y="0.0" width="205.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="1" green="0.06950727541403523" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff0-KZ-9fb">
+                                        <rect key="frame" x="0.0" y="25.5" width="205.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2Y-T4-loN">
+                                <rect key="frame" x="15" y="339" width="345" height="115"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="u28-gi-84a">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="64f-WT-1DE"/>
+                                            <constraint firstAttribute="width" secondItem="u28-gi-84a" secondAttribute="height" multiplier="1:1" id="FeA-Pm-Em7"/>
+                                            <constraint firstAttribute="height" constant="115" id="fZo-Pe-3dk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="01p-LH-st4">
+                                        <rect key="frame" x="115" y="0.0" width="115" height="115"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="27e-wK-h3o"/>
+                                            <constraint firstAttribute="height" constant="115" id="BcE-Us-YIs"/>
+                                            <constraint firstAttribute="width" secondItem="01p-LH-st4" secondAttribute="height" multiplier="1:1" id="pvf-CH-bAP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="U9P-mz-yHy">
+                                        <rect key="frame" x="230" y="0.0" width="115" height="115"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="U9P-mz-yHy" secondAttribute="height" multiplier="1:1" id="Rt5-Ye-fYU"/>
+                                            <constraint firstAttribute="width" constant="115" id="Von-oE-POz"/>
+                                            <constraint firstAttribute="height" constant="115" id="fTS-kX-0vi"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O2Y-T4-loN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GUU-oV-VXo"/>
+                            <constraint firstItem="O2Y-T4-loN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="63" id="aKa-PV-XX8"/>
+                            <constraint firstItem="pz0-TB-4ji" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120.75" id="ei4-8c-SwS"/>
+                            <constraint firstItem="pz0-TB-4ji" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fqX-Pt-wYP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fb" destination="u28-gi-84a" id="DCU-TS-H4e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook" width="256" height="256"/>
+        <image name="instagram" width="256" height="256"/>
+        <image name="twitter" width="256" height="256"/>
+    </resources>
+</document>
